@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html> 
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <title>四季的集群阵列 - 出错啦!</title>
+        <!-- <style id="content" type="text/css">.bg {margin: 0 auto;background: url(https://guanghou-my.sharepoint.com/personal/zqds_edu_get365_pw/_layouts/15/guestaccess.aspx?docid=05c698cd9fb204b3fa8d00cf5e6c96c6f&authkey=AQSr5LblI9vlN8tRvcFmcj4) no-repeat top;}</style> -->
+        <style>
+			#bg
+			{
+				position: fixed;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+				opacity: 0;
+				transition:opacity 0.5s;
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<style type="text/css">
+            .main
+	        {
+			    margin-right:20%;
+				margin-left:20%;
+				text-align:center;
+                width:60%;
+                background-color:#fff;
+				position:absolute;
+				bottom:0;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+            }
+			@font-face
+            {
+                font-family:EBGaramond08-Regular;
+                src: url('https://guanghou-my.sharepoint.com/personal/zqds_edu_get365_pw/_layouts/15/guestaccess.aspx?docid=009507d9debe94f81bc5d887724e80294&authkey=AWZr7czVFiJC3RfCMoyb2VU');
+            }
+
+            div
+            {
+                font-family:EBGaramond08-Regular;
+            }
+        </style>
+		<script type="text/javascript">document.oncontextmenu=function(e){return false;}</script>
+    </head>
+    <body class="bg" onselectstart="return false">
+		<script>
+			var body=document.body,bkg="https://guanghou-my.sharepoint.com/personal/zqds_edu_get365_pw/_layouts/15/guestaccess.aspx?docid=019f966a54d824919ac0db13a9a28396f&authkey=AVDoMsVlcN1RCTQrqyiQrJk";
+			var load=function()
+			{
+				var bgimg=new Image(),div=document.createElement("div");
+				div.id="bg";
+				body.appendChild(div);
+				bgimg.onload=function()
+					{
+						div.style.opacity=1;
+						div.style.backgroundImage="url('"+bkg+"')";
+					}
+				bgimg.src=bkg;
+			}
+			window.onload=load;
+		</script>
+        <div class="main">
+	        Copyright ©2008~2018 zqds All rights reserved.
+	    </div>
+    </body>
+</html>
